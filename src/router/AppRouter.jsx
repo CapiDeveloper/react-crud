@@ -1,6 +1,8 @@
 import { createBrowserRouter } from 'react-router-dom';
 import Layout from '../layout/Layout';
-import {App} from '../App';
+import { Inicio } from '../pages/inicio';
+import Crear from '../pages/Crear';
+import Editar from '../pages/Editar';
 
 export const router = createBrowserRouter([
     {
@@ -9,11 +11,16 @@ export const router = createBrowserRouter([
         children:[
             {
                 index:true,
-                element: <App />,
+                element: <Inicio />,
+            },
+            {
+                path:'crear',
+                element:<Crear />
             },
             {
                 
-                path: "contacts/:contactId",
+                path: "editar/:id",
+                element:<Editar />
             }
         ]
       },
