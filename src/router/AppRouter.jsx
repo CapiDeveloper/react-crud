@@ -1,6 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom';
 import Layout from '../layout/Layout';
-import { Inicio } from '../pages/inicio';
+import { Inicio } from '../pages/Inicio';
 import Crear from '../pages/Crear';
 import Editar from '../pages/Editar';
 
